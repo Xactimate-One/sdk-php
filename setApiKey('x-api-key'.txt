@@ -1,0 +1,16 @@
+// Import the required classes and files
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Create a default configuration object
+$config = OpenAPI\Client\Configuration::getDefaultConfiguration();
+
+// Set the API key on the configuration object
+$config->setApiKey('x-api-key', 'YOUR_API_KEY');
+
+// Create a new API client instance using the configuration object
+$apiInstance = new OpenAPI\Client\Api\YourApiClass(
+    new GuzzleHttp\Client(),
+    $config
+);
+
+// Use the API client instance to make API calls

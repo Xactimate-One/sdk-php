@@ -1,0 +1,2 @@
+echo 'Exception when calling HealthApi: ', $e->getMessage(), PHP_EOL;
+
